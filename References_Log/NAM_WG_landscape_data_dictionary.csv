@@ -1,0 +1,13 @@
+field,required,description,allowed_values,example
+pmid,Y,"PubMed ID of the reference. If there is no PMID (e.g., regulatory guidance, preprint, conference abstract), enter the DOI or a stable URL instead.",PMID (digits only); otherwise DOI or URL,38123456
+contributor,Y,WG member adding the entry.,Krina Mehta; Khem Raj Ghusinga; Jason Sherfey; Ben Knapp; Lara Clemens; Celeste Vallejo; Christina Battista; Christian Maass; Mokshada Kumar; Other,Krina Mehta
+title,Y,Full title of the reference.,free text,<article title>
+year,Y,Publication year.,YYYY,2024
+nam_category,Y,"Broad NAM category. Multiple allowed (e.g., in vitro data integrated with an in silico model).",In vitro; In silico; In chemico; Hybrid (in vitro + in silico); Other,Hybrid (in vitro + in silico)
+nam_sub_category,Y,Specific system(s) and/or model type(s) within the category. Multiple allowed.,In vitro: Standard 2D/primary cells; Organoid; Microphysiological system (MPS); Organ-on-chip; Spheroid/3D culture; Other in vitro. In silico: QSP; QST; PBPK; PK/PD; ML/AI; Hybrid ML-mechanistic; QSAR; Other in silico,Primary hepatocytes; QST
+organ_system,N,"Organ, tissue, or system of focus. Use 'Multi-organ' or 'Not organ-specific' if applicable.",free text,Liver
+cou,Y,"Context of use: what question or decision the NAM informs. Start with a category, then a short statement after a colon.","<category>: <statement>, where category is PK/exposure; Efficacy; Safety - acute; Safety - chronic; Target/mechanism; Dose selection; Other",Safety - chronic: predict clinical hepatotoxicity risk to prioritize candidates before FIH
+therapeutic_area,N,Therapeutic area(s). Multiple allowed.,Oncology; I&I; Rare disease; Neuroscience; Metabolic; Cardiovascular; Infectious disease; Other,Agnostic
+drug_modality,N,Drug modality. Multiple allowed.,Small molecule; Biologic (mAb/protein); ADC; Oligonucleotide; Cell/gene therapy; Peptide; Other,Small molecule
+credibility,N,"How the NAM's predictions were evaluated. Multiple allowed; add details (e.g., V&V40 or ICH M15 framework, number of compounds) in contributor_comments.",Compared with clinical data; Compared with in vivo animal data; Compared with other in vitro data; Internal/cross-validation only; Uncertainty/sensitivity analysis; Formal credibility framework; Regulatory acceptance; Not reported,Compared with clinical data; Uncertainty/sensitivity analysis
+contributor_comments,N,"Short summary of the system/approach and key findings in your own words, plus relevance to the WG, gaps or challenges, case-study potential, and anything else worth noting.",free text,<2-4 sentence summary; key takeaways; gaps>
